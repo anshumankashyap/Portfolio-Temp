@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansuman Panda - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles/portfolio.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="Resume.html">RESUME</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+              <div class="content">
+                <h1>HI THERE!</h1>
+                <h2>I'M <span class="highlight">ANSUMAN PANDA</span></h2>
+                <p class="subtitle">FULL-STACK DEVELOPER / UI DESIGNER</p>
+                <a href="#about"><button class="cta-button">MORE ABOUT ME</button></a>
+              </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="stats-container">
+                <div class="pt16 pb16 o_colored_level col-lg-7" style="width: 60rem;">
+                    <h1 style="font-size: 3rem; text-align: center;">About Me</h1>
+                    <h1>I'm&nbsp;Ansuman</h1><p>Web Developer</p><p style="text-align: left;">I am a Full-Stack web developer and a Computer Science undergraduate from GIETU Gunupur, India. Passionate about coding and innovation, I specialize in building websites and applications that deliver exceptional digital experiences. Continuously honing my skills, I thrive on learning new technologies and pushing creative boundaries. Beyond development, I embrace personal growth through fitness and exploration, striving to become the best version of myself.</p><p>
+
+                    </p><p style="text-align: left;"><font style="color: rgb(0, 0, 255);">Age</font><font style="color: rgb(49, 24, 115);">&nbsp;</font>:&nbsp;21<span class="oe-tabs" style="width: 17.5375px;">	</span>&ZeroWidthSpace;</p><p style="text-align: left;"><font style="color: rgb(0, 0, 255);">Email</font> : <a href="mailto:anshumanpanda08@gmail.com"><span class="o_animated_text o_animate o_animate_on_scroll o_anim_bounce_in" data-scroll-zone-start="0" data-scroll-zone-end="100" style="animation-delay: -0.489783s; visibility: visible;">Anshuman Panda</span></a></p><p style="text-align: left;"><font style="color: rgb(0, 0, 255);">Phone</font> :&nbsp;+91 784-695-1292</p><p style="text-align: left;"><a href="https://www.google.com/maps/place/Bhawanipatna,+Odisha/@19.9105045,83.143055,14z/data=!3m1!4b1!4m6!3m5!1s0x3a24ebfe82486fb3:0x917ee4e1adc84544!8m2!3d19.9074279!4d83.1641562!16zL20vMGNtbGJk?entry=ttu&amp;g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">&ZeroWidthSpace;<span class="oe-tabs" style="width: 0.012474px;">	</span>&ZeroWidthSpace;&ZeroWidthSpace;<font style="color: rgb(0, 0, 255);">Place</font> :&nbsp;Bhawanipatna, India - 766001</a><br></p><p><a class="btn btn-primary" href="Resume.html">Resume</a></p></div>
+            </div>
+            <div class="services">
+                <h3>What I Do?</h3>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-code"></i>
+                        <h4>Web Development</h4>
+                        <p>Full-stack development with modern technologies</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-palette"></i>
+                        <h4>UI Design</h4>
+                        <p>Creating beautiful and functional interfaces</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Responsive Design</h4>
+                        <p>Websites that work on all devices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Skills-->
+        <section id="skills">
+            <h1 style="text-align: center;"><span style="color: black;">Skills</span> 
+            </h1>
+            <div class="skills-container">
+                <h2>Professional Skills</h2>
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Skills will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .skills-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        color: #ffd700;
+        margin-bottom: 2rem;
+    }
+    
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .skill-card {
+        background-color: #1f2937;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .skill-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .skill-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skill-icon {
+        background-color: #ffd700;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+    }
+    
+    .skill-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .skill-info h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+        color: white;
+    }
+    
+    .skill-technologies {
+        color: white;
+        font-size: 0.875rem;
+    }
+    
+    .skill-bar-container {
+        width: 100%;
+        background-color: #374151;
+        border-radius: 9999px;
+        height: 10px;
+        overflow: hidden;
+    }
+    
+    .skill-bar {
+        height: 100%;
+        background-color: #ffd700;
+        border-radius: 9999px;
+        width: 0;
+        transition: width 1s ease-out;
+    }
+    
+    .skill-percentage {
+        text-align: right;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+    }
+    </style>
+    
+    <script>
+        function createSkillCard(skill) {
+        const card = document.createElement('div');
+        card.className = 'skill-card';
+        
+        card.innerHTML = `
+            <div class="skill-header">
+                <div class="skill-icon">
+                    <img src="${skill.icon}" alt="${skill.category} icon">
+                </div>
+                <div class="skill-info">
+                    <h3>${skill.category}</h3>
+                    <div class="skill-technologies">${skill.technologies.join(" • ")}</div>
+                </div>
+            </div>
+            <div class="skill-bar-container">
+                <div class="skill-bar" data-level="${skill.level}"></div>
+            </div>
+            <div class="skill-percentage">${skill.level}%</div>
+        `;
+        
+        return card;
+    }
+    
+    function initializeSkills() {
+        const skillsGrid = document.getElementById('skillsGrid');
+        
+        skills.forEach(skill => {
+            const card = createSkillCard(skill);
+            skillsGrid.appendChild(card);
+        });
+        
+        // Animate skill bars after a short delay
+        setTimeout(() => {
+            document.querySelectorAll('.skill-bar').forEach(bar => {
+                const level = bar.getAttribute('data-level');
+                bar.style.width = `${level}%`;
+            });
+        }, 200);
+    }
+    
+    // Initialize when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', initializeSkills);
+    
+        const skills = [
+        {
+            category: "Frontend",
+            level: 90,
+            icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2' ry='2'/%3E%3Cline x1='3' x2='21' y1='9' y2='9'/%3E%3Cline x1='9' x2='9' y1='21' y2='9'/%3E%3C/svg%3E",
+            technologies: ["HTML5", "CSS3", "JavaScript"]
+        },
+        {
+            category: "Backend",
+            level: 85,
+            icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 17h18a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2Z'/%3E%3Cpath d='M3 17h18a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2Z'/%3E%3Cpath d='M3 13h18'/%3E%3C/svg%3E",
+            technologies: ["Node.js", "Python", "SQL"]
+        },
+        {
+            category: "Mobile",
+            level: 75,
+            icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='14' height='20' x='5' y='2' rx='2' ry='2'/%3E%3Cline x1='12' x2='12.01' y1='18' y2='18'/%3E%3C/svg%3E",
+            technologies: ["React Native", "Flutter"]
+        },
+        {
+            category: "DevOps",
+            level: 80,
+            icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 17 10 11 4 5'/%3E%3Cline x1='12' x2='20' y1='19' y2='19'/%3E%3C/svg%3E",
+            technologies: ["Docker", "AWS", "CI/CD"]
+        },
+        {
+            category: "Tools",
+            level: 45,
+            icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M16.24 7.76l-8.48 8.48'/%3E%3Cpath d='M7.76 7.76l8.48 8.48'/%3E%3C/svg%3E",
+            technologies: ["Git", "Docker", "VS Code", "Terminal"]
+        },
+        {
+            category: "Tools",
+            level: 60,
+            icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 21l10-10'/%3E%3Cpath d='M16 5l6 6L8.5 22.5a2.12 2.12 0 0 1-3 0l-4-4a2.12 2.12 0 0 1 0-3L16 5Z'/%3E%3Cpath d='M16 5l-3.5 3.5'/%3E%3Cpath d='M20 7l-3.5 3.5'/%3E%3Cline x1='2' x2='10' y1='21' y2='21'/%3E%3C/svg%3E",
+            technologies: ["Photoshop","Illustrator", "Figma", "XD"]
+        }
+    ];
+    </script>
+
+<!--Education Section-->
+<section id="education">
+<style>
+.education-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand-icon {
+  font-size: 1.5em;
+  color: #646cff;
+  transition: transform 0.3s ease;
+}
+
+.education-card.expanded .expand-icon {
+  transform: rotate(45deg);
+}
+
+.school-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  color: #888;
+}
+
+.description {
+  color: #666;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.education-details {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.education-card.expanded .education-details {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #646cff, #9089fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #fff;
+}
+
+h4 {
+  color: #646cff;
+  margin: 1rem 0;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.achievements li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #646cff;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(100, 108, 255, 0.1);
+  color: #646cff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(100, 108, 255, 0.2);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    padding: 0 1rem;
+  }
+
+  .school-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  .skill-tags {
+    gap: 0.3rem;
+  }
+
+  .skill-tag {
+    font-size: 0.8em;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .education-card {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  h3 {
+    color: #213547;
+  }
+
+  .description {
+    color: #444;
+  }
+}
+</style>
+<div id="education-section"></div>
+<script>
+
+            const educationData = [
+            {
+                degree: "Bachelor of Technology in Computer Science",
+                school: "GIET University",
+                year: "2021 - 2025",
+                description: "Major in Software Engineering with focus on Web Development",
+                achievements: [
+                    "Dean's List 2021-2023",
+                    "First Place in Hackathon 2022",
+                    "Student Research Award"
+                ],
+                skills: ["JavaScript", "React", "Node.js", "Python"]
+            },
+            {
+                degree: "High School Diploma",
+                school: "Vikash Residential School, Bhawanipatna",
+                year: "2019 - 2021",
+                description: "Completed intermediate ",
+                achievements: [
+                    "Valedictorian",
+                    "Science Fair Winner"
+                ],
+                skills: ["Web Designing", "Basic Programming", "Leadership"]
+            },
+            {
+                degree: "School",
+                school: "Hi-Tech Public School, Bhawanipatna",
+                year: "2018 - 2019",
+                description: "Advanced placement in Mathematics and Computer Science",
+                achievements: [
+                    "Math Club President",
+
+                ],
+                skills: ["Mathematics", "Communication", ""]
+            }
+        ];
+
+        function createEducationCard(education) {
+            const card = document.createElement('div');
+            card.className = 'education-card';
+            
+            card.innerHTML = `
+                <div class="education-header">
+                    <h3>${education.degree}</h3>
+                    <div class="expand-icon">+</div>
+                </div>
+                <div class="school-info">
+                    <span class="school">${education.school}</span>
+                    <span class="year">${education.year}</span>
+                </div>
+                <p class="description">${education.description}</p>
+                <div class="education-details">
+                    <div class="achievements">
+                        <h4>Achievements</h4>
+                        <ul>
+                            ${education.achievements.map(achievement => `
+                                <li>${achievement}</li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skill-tags">
+                            ${education.skills.map(skill => `
+                                <span class="skill-tag">${skill}</span>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            card.addEventListener('click', () => {
+                card.classList.toggle('expanded');
+            });
+
+            return card;
+        }
+
+        function renderEducationSection(container, educationData) {
+            const section = document.createElement('div');
+            section.className = 'education-container';
+            
+            const title = document.createElement('h2');
+            title.textContent = 'Education';
+            section.appendChild(title);
+
+            educationData.forEach(edu => {
+                section.appendChild(createEducationCard(edu));
+            });
+
+            container.appendChild(section);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const educationSection = document.getElementById('education-section');
+            renderEducationSection(educationSection, educationData);
+        });
+</script>
+</section>
+
+<section id="work" class="portfolio-section">
+    <div class="section-title">
+        <h2><i class="fas fa-code"></i>
+            <span style="color: black;">Projects</span> 
+            <span style="color: #FFFF00;">Made</span></h2>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Web Project 1 -->
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/seed/web1/800/600" alt="E-commerce Website">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-title">Portfolio Website</h3>
+                    <a href="https://ansuman-panda.odoo.com/" target="_blank" class="portfolio-link">View Project</a>
+                </div>
+            </div>
+            
+            <!-- Web Project 2 -->
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/seed/web2/800/600" alt="Portfolio Website">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-title">E-Commerce Website</h3>
+                    <a href="https://github.com/anshumankashyap" target="_blank" class="portfolio-link">View Project</a>
+                </div>
+            </div>
+
+            <!-- App Project -->
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/seed/app1/800/600" alt="Fitness App">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-title">Fitness Tracking App</h3>
+                    <a href="https://github.com/anshumankashyap" target="_blank" class="portfolio-link">View Project</a>
+                </div>
+            </div>
+
+            <!-- Other Project -->
+            <div class="portfolio-item">
+                <img src="https://picsum.photos/seed/other1/800/600" alt="Brand Design">
+                <div class="portfolio-overlay">
+                    <h3 class="portfolio-title">Brand Identity Design</h3>
+                    <a href="https://github.com/anshumankashyap" target="_blank" class="portfolio-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Experience (Internship)-->
+    <section id="experiences">
+        <style>
+            /* Styles for the section */
+            .experience-section {
+              padding: 4rem 2rem;
+              background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            }
+            .experience-title {
+              text-align: center;
+              margin-bottom: 3rem;
+              color: #2d3436;
+            }
+            .experience-title h2 {
+              font-size: 2.5rem;
+              margin-bottom: 1rem;
+            }
+            .experience-title p {
+              font-size: 1.1rem;
+              color: #636e72;
+            }
+            @media (max-width: 768px) {
+              .experience-title h2 {
+                font-size: 2rem;
+              }
+            }
+            @media (max-width: 480px) {
+              .experience-section {
+                padding: 3rem 1rem;
+              }
+            }
+      
+            /* Styles for the timeline */
+            .timeline {
+              max-width: 1000px;
+              margin: 0 auto;
+              position: relative;
+            }
+            .timeline::before {
+              content: '';
+              position: absolute;
+              width: 2px;
+              background: #2d3436;
+              top: 0;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+            .timeline-item {
+              margin-bottom: 3rem;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              opacity: 0;
+              transform: translateY(20px);
+              transition: all 0.5s ease;
+            }
+            .timeline-item.show {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            .timeline-item:nth-child(odd) .experience-card {
+              margin-right: 50%;
+              transform: translateX(-2rem);
+            }
+            .timeline-item:nth-child(even) .experience-card {
+              margin-left: 50%;
+              transform: translateX(2rem);
+            }
+            @media (max-width: 768px) {
+              .timeline::before {
+                left: 2rem;
+              }
+              .timeline-item:nth-child(odd) .experience-card,
+              .timeline-item:nth-child(even) .experience-card {
+                margin: 0;
+                margin-left: 4rem;
+                transform: none;
+                width: calc(100% - 5rem);
+              }
+            }
+      
+            /* Styles for the cards */
+            .experience-card {
+              background: white;
+              padding: 1.5rem;
+              border-radius: 8px;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              width: 80%;
+              max-width: 400px;
+              cursor: pointer;
+              transition: all 0.3s ease;
+            }
+            .experience-card:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+            .experience-card.expanded {
+              width: 90%;
+              max-width: 450px;
+            }
+            .experience-card h3 {
+              color: #2d3436;
+              margin-bottom: 0.5rem;
+              font-size: 1.25rem;
+            }
+            .experience-card .company {
+              color: #0984e3;
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+            }
+            .experience-card .date {
+              color: #636e72;
+              font-size: 0.9rem;
+              margin-bottom: 1rem;
+            }
+            .experience-card .description {
+              color: #2d3436;
+              line-height: 1.6;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.3s ease;
+            }
+            .experience-card.expanded .description {
+              max-height: 200px;
+            }
+            @media (max-width: 480px) {
+              .experience-card {
+                padding: 1rem;
+              }
+            }
+          </style>
+      
+          <div id="app">
+            <section class="experience-section">
+              <div class="experience-title">
+                <h2>Experience</h2>
+                <p>My professional journey and achievements</p>
+              </div>
+      
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="experience-card">
+                    <h3>Senior Software Engineer</h3>
+                    <div class="company">Google</div>
+                    <div class="date">2020 - Present</div>
+                    <div class="description">
+                      Led development of key features for Google Cloud Platform.
+                      Managed a team of 5 engineers.
+                      Improved system performance by 40%.
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="timeline-item">
+                  <div class="experience-card">
+                    <h3>Software Engineer</h3>
+                    <div class="company">Microsoft</div>
+                    <div class="date">2018 - 2020</div>
+                    <div class="description">
+                      Developed features for Microsoft Azure.
+                      Implemented CI/CD pipelines.
+                      Reduced deployment time by 60%.
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="timeline-item">
+                  <div class="experience-card">
+                    <h3>Junior Developer</h3>
+                    <div class="company">Amazon</div>
+                    <div class="date">2016 - 2018</div>
+                    <div class="description">
+                      Worked on AWS Lambda features.
+                      Developed serverless applications.
+                      Improved code coverage to 95%.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
+            function setupScrollAnimations(items) {
+              const observer = new IntersectionObserver(
+                (entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add("show");
+                    }
+                  });
+                },
+                { threshold: 0.5 }
+              );
+      
+              items.forEach((item) => observer.observe(item));
+            }
+      
+            function setupCardInteractions(cards) {
+              cards.forEach((card) => {
+                card.addEventListener("click", () => {
+                  card.classList.toggle("expanded");
+                });
+              });
+            }
+      
+            function setupExperience(element) {
+              const timelineItems = element.querySelectorAll(".timeline-item");
+              const cards = element.querySelectorAll(".experience-card");
+      
+              setupScrollAnimations(timelineItems);
+              setupCardInteractions(cards);
+            }
+      
+            setupExperience(document.querySelector(".experience-section"));
+          </script>
+      
+    </section>
+<!--Contact Form-->
+    <section id="contact" class="contact">
+        <h2>CONTACT</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@ansumanpanda.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 78469 51292</p>
+                    </div>
+                </div>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+    </section>
+    
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Me</h3>
+                <p>I'm Ansuman Panda, a passionate designer and developer dedicated to creating beautiful and functional digital experiences. Let's work together to bring your ideas to life.</p>
+            </div>
+            
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact-info">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> hello@ansumanpanda.com</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                <div>
+                    <a href="https://github.com/anshumankashyap" target="_blank" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ansuman-panda-348428336/" target="_blank" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/ansumanpanda" target="_blank" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/anshumaan.08" target="_blank" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://dribbble.com/ansumanpanda" target="_blank" data-tooltip="Dribbble">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Designed with❤️ by Ansuman Panda. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    </main>
+<div class="social-bar">
+    <ul class="social-links">
+        <li>
+            <a href="https://github.com/anshumankashyap" target="_blank" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/ansuman-panda-348428336/" target="_blank" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/ansumanpanda" target="_blank" data-tooltip="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://instagram.com/anshumaan.08" target="_blank" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://dribbble.com/ansumanpanda" target="_blank" data-tooltip="Dribbble">
+                <i class="fab fa-dribbble"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
